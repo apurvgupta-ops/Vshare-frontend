@@ -44,7 +44,7 @@ const Login = () => {
 
           <div className="shadow-2xl">
             <GoogleLogin
-              clientId={process.env.REACT_APP_ID}
+              clientId="534339965712-hhieu8gb08kbqtoqlkiesq9cbufj1jdv.apps.googleusercontent.com"
               render={(renderProps) => (
                 <button
                   type="button"
