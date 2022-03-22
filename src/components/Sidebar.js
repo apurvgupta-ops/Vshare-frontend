@@ -70,7 +70,7 @@ const Sidebar = ({ user, closeToggle }) => {
           ))}
         </div>
       </div>
-      {user &&
+      {/* {user &&
         user(
           <Link
             to={`user-profile/${user._id}`}
@@ -84,7 +84,7 @@ const Sidebar = ({ user, closeToggle }) => {
             />
             <p>{user.userName}</p>
           </Link>
-        )}
+        )} */}
     </div>
   );
 };
