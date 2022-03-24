@@ -15,7 +15,7 @@ const category = [
     name: "Animal",
   },
   {
-    name: "wallpaper",
+    name: "Wallpaper",
   },
   {
     name: "Gaming",

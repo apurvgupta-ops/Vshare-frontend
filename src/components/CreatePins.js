@@ -6,7 +6,7 @@ import { client } from "../client";
 import Spinner from "./Spinner";
 import { categories } from "../utils/data";
 
-const CreatePins = () => {
+const CreatePins = ({ user }) => {
   const [title, setTitle] = useState("");
   const [about, setAbout] = useState("");
   const [loading, setLoading] = useState(false);
@@ -61,10 +61,10 @@ const CreatePins = () => {
             _ref: imageAsset?._id,
           },
         },
-        // userId: user._id,
+        userId: user._id,
         postedBy: {
           _type: "postedBy",
-          // _ref: user._id,
+          _ref: user._id,
         },
         category,
       };
@@ -140,7 +140,7 @@ const CreatePins = () => {
             placeholder="Add your title"
             className="outline-none text-2xl sm:text-3xl font-bold border-b-2 border-gray-200 p-2"
           />
-          {/* {user && (
+          {user && (
             <div className="flex gap-2 mt-2 mb-2 items-center bg-white rounded-lg">
               <img
                 className="w-10 h-10 rounded-full"
@@ -149,7 +149,7 @@ const CreatePins = () => {
               />
               <p className="font-bold">{user.userName}</p>
             </div>
-          )} */}
+          )}
           <input
             type="text"
             value={about}

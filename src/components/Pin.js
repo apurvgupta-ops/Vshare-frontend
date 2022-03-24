@@ -137,7 +137,7 @@ const Pin = ({ pin }) => {
           </div>
         )}
       </div>
-      {/* <Link
+      <Link
         to={`/user-profile/${postedBy?._id}`}
         className="flex gap-2 mt-2 items-center"
       >
@@ -147,7 +147,7 @@ const Pin = ({ pin }) => {
           alt="user"
         />
         <p className="font-semibold capitalize">{postedBy?.userName}</p>
-      </Link> */}
+      </Link>
     </div>
   );
 };
