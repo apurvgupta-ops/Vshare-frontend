@@ -5,7 +5,6 @@ import Login from "./components/Login";
 import Home from "./container/Home";
 
 const App = () => {
-  const navigate = useNavigate();
   return (
     <Routes>
       <Route path="/*" element={<Home />} />

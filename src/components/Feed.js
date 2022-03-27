@@ -34,6 +34,10 @@ const Feed = () => {
       <Spinner message={`We are adding ${ideaName} ideas to your feed!`} />
     );
   }
+
+  if (!pins?.length) {
+    return <h1>No Pins Available</h1>;
+  }
   return <div>{pins && <MasonaryLayout pins={pins} />}</div>;
 };
 
